@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState, Dispatch, SetStateAction}from 'react'
-import { useUser } from 'C:/Users/laksh/Downloads/StoryBook_App/storybook/app/context';
+import { useUser } from '../context';
 import {ethers} from 'ethers'
 import { AccountContractAddress,CrowdFundingAddress} from '../../config'
 import AccountABI from '../../../Backend/build/contracts/Account.json'
