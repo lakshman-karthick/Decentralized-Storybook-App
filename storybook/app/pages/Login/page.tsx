@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import Login from '../../components/Login'
-import { useUser } from 'C:/Users/laksh/Downloads/StoryBook_App/storybook/app/context';
+import { useUser } from '../../context';
 import { useRouter } from 'next/navigation'
 export default function LoginPage() {
   const { isLogin} = useUser();
