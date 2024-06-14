@@ -1,0 +1,2 @@
+export const AccountContractAddress = '0x799e3545277b2A3e7b93315B8098a12Ef910fa74'
+export const CrowdFundingAddress = '0x90237013106e6301453aF6d041E1a7D8DFd10c9E'
