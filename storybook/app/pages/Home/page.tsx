@@ -3,7 +3,7 @@ import React,{useState} from 'react'
 import Sidebar from '@/app/components/Sidebar'
 import dynamic from 'next/dynamic';
 
-function page() {
+function Page() {
 
   const [pageNo, setPageNo] = useState<number | undefined>(0);
   const [currStory,setCurrStory] = useState<any>(null);
@@ -34,7 +34,7 @@ const ProfileNoHydration = dynamic(() => import('@/app/components/Profile'), {
   )
 }
 
-export default page
+export default Page
 
 
 // Contract - TimeStamp in CrowdFund

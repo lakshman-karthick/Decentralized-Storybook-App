@@ -251,10 +251,10 @@ function Posts({pageNo,setPageNo,currStory,setCurrStory,currCampaign,setCurrCamp
       }
       <div className={(pageNo == 1 || pageNo == 2 || pageNo == 6) || pageNo == 7 || pageNo == 8 || pageNo == 9 || pageNo == 10 ? 'overflow-y-scroll no-scrollbar h-full':'overflow-y-scroll no-scrollbar h-5/6'}>  
       {
-        pageNo === 0 && toggle &&  myPost.shortStoryPosts.map((post:any) => (<Feed post={post} flagLike={flagLike} setFlagLike={setFlagLike}/>))
+        pageNo === 0 && toggle &&  myPost.shortStoryPosts.map((post:any, index:number) => (<Feed key={index} post={post} flagLike={flagLike} setFlagLike={setFlagLike}/>))
       }
       {
-        pageNo === 0 && !toggle && myPost.quotePosts.map((post:any) => (<Feed post={post} flagLike={flagLike} setFlagLike={setFlagLike}/>))
+        pageNo === 0 && !toggle && myPost.quotePosts.map((post:any, index:number) => (<Feed key={index} post={post} flagLike={flagLike} setFlagLike={setFlagLike}/>))
       }
       {
         pageNo === 1 && <Create setFlagLike={setFlagLike} flagLike = {flagLike}/>
@@ -263,10 +263,10 @@ function Posts({pageNo,setPageNo,currStory,setCurrStory,currCampaign,setCurrCamp
         pageNo === 2 && <Quote setFlagLike={setFlagLike} flagLike = {flagLike}/>
       }
       {
-        pageNo === 3 && shortStory.map((post: any) => (<Feed post={post} flagLike={flagLike} setFlagLike={setFlagLike}/>))
+        pageNo === 3 && shortStory.map((post: any , index:number) => (<Feed key={index} post={post} flagLike={flagLike} setFlagLike={setFlagLike}/>))
       }
       {
-        pageNo === 4 && quote.map((post:any) => (<Feed post={post} flagLike={flagLike} setFlagLike={setFlagLike}/>))
+        pageNo === 4 && quote.map((post:any, index:number) => (<Feed key={index} post={post} flagLike={flagLike} setFlagLike={setFlagLike}/>))
       }
 
       {  
