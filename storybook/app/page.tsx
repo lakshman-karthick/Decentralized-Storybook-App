@@ -1,18 +1,17 @@
 'use client';
-import { useRouter } from 'next/navigation' 
-// import { UserProvider } from './context/index.js'; 
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+
 export default function Home() {
   const router = useRouter();
+
+  useEffect(() => {
+    router.push('/pages/Login');
+  }, [router]);
+
   return (
-    // <UserProvider>
     <main>
-      {(
-        (() => {
-          router.push('/pages/Login');
-          return null;
-        })()
-      )}
+      <p>Redirecting...</p>
     </main>
-    // </UserProvider>
-  )
+  );
 }
